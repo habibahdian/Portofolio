@@ -31,9 +31,11 @@ export type SkillCategory = {
   skills: string[];
 };
 
+const asset = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+
 export const images = {
-  professional: "/images/dian-professional.jpeg",
-  portrait: "/images/dian-portrait.jpeg",
+  professional: asset("images/dian-professional.jpeg"),
+  portrait: asset("images/dian-portrait.jpeg"),
 } as const;
 
 export const profile = {
